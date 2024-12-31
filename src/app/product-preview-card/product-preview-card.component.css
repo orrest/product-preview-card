@@ -1,0 +1,90 @@
+article {
+  inline-size: 600px;
+  block-size: 450px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image, .text {
+  inline-size: 50%;
+  block-size: 100%;
+  box-sizing: border-box;
+}
+
+.image img {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.text {
+  padding: 32px;
+}
+
+.text h3 {
+  color: var(--aurometal-saurus);
+}
+
+.text h1 {
+  color: var(--gunmetal);
+}
+
+.text > p:first-of-type {
+  color: var(--aurometal-saurus);
+}
+
+.text > p:last-of-type > span:first-of-type {
+  color: var(--deep-aquamarine);
+}
+
+.text > p:last-of-type > span:last-of-type {
+  color: var(--aurometal-saurus);
+  font-family: "Montserrat", serif;
+  font-weight: medium;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-decoration: line-through;
+}
+
+section > p.prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+section > button {
+  background: var(--deep-aquamarine);
+  border-color: transparent;
+  color: white;
+  border-radius: 10px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  padding-block: 16px;
+  inline-size: 100%;
+}
+
+section > button:hover {
+  background: var(--deep-aquamarine-hover);
+  cursor: pointer;
+}
+
+@media (max-width: 675px) {
+  article {
+    flex-direction: column;
+    inline-size: 375px;
+    block-size: auto;
+  }
+
+  .image, .text {
+    inline-size: 100%;
+  }
+}

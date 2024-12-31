@@ -1,0 +1,21 @@
+<article>
+  <section class="image">
+    <picture>
+      <source media="(max-width: 675px)" srcset="images/image-product-mobile.jpg">
+      <img src="images/image-product-desktop.jpg" alt="product-image" width="600" height="900">
+    </picture>
+  </section>
+  <section class="text">
+    <h3 class="overline-font">{{ subject }}</h3>
+    <h1 class="display-font">{{ title }}</h1>
+    <p class="body-font intro">{{ intro }}</p>
+    <p class="prices">
+      <span class="display-font">{{ price }}</span>
+      <span>{{ oldPrice }}</span>
+    </p>
+    <button type="button">
+      <img src="images/icon-cart.svg" width="15" height="16" alt="">
+      <span class="button-text-font">{{ addToCart }}</span>
+    </button>
+  </section>
+</article>
