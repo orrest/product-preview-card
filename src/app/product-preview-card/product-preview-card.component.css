@@ -80,8 +80,9 @@ section > button:hover {
 @media (max-width: 675px) {
   article {
     flex-direction: column;
-    inline-size: 375px;
+    inline-size: 80%;
     block-size: auto;
+    margin-inline: auto;
   }
 
   .image, .text {
